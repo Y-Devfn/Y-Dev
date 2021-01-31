@@ -2,7 +2,7 @@ const express = require("express")
 const app = express.Router()
 
 
-app.get("/api/pages/fortnite-game", async (req, res) => {
+app.get("/content/api/pages/fortnite-game/", async (req, res) => {
     var season
     if (req.headers["user-agent"]) {
         try {
@@ -20,19 +20,19 @@ app.get("/api/pages/fortnite-game", async (req, res) => {
         _activeDate: "2017-08-30T03:20:48.050Z",
         lastModified: new Date(),
         _locale: "en-US",
-        battleroyalenews: {
+        battleroyalenewsv2: {
             news: {
                 motds: [
                     {
                         entryType: "Text",
-                        image: "https://cdn.discordapp.com/attachments/804971088936435713/804974051865002014/ydev_logo_better.png",
-                        tileImage: "https://cdn.discordapp.com/attachments/777418829570637865/781211046730924063/Untitled_5.png",
+                        image: "https://cdn.discordapp.com/attachments/777041962565894175/804941952680198204/Untitled.png",
+                        tileImage: "https://cdn.discordapp.com/attachments/777041962565894175/804948668783263744/Untitled_4.png",
                         hidden: false,
                         videoMute: false,
                         tabTitleOverride: "Y-Dev",
                         _type: "CommonUI Simple Message MOTD",
                         title: "Y-Dev",
-                        body: "Welcome To Y-Dev A Fortnite Private Server Made By (@Jacobb626YT), (@Sparmage1),  (@kayisfunne), (@ForkKnifeGame__), and (@brodxyy) We All Hope You Enjoy!!!",
+                        body: "Welcome To Y-Dev A Fortnite Private Server Made by the (@YdevFN) team! We All Hope You Enjoy!!!",
                         videoLoop: false,
                         videoStreamingEnabled: false,
                         sortingPriority: 0,
@@ -42,19 +42,19 @@ app.get("/api/pages/fortnite-game", async (req, res) => {
                 ]
             }
         },
-        battleroyalenewsv2: {
+        battleroyalenews: {
             news: {
                 motds: [
                     {
                         entryType: "Text",
-                        image: "https://media.discordapp.net/attachments/804971088936435713/804974051865002014/ydev_logo_better.png",
-                        tileImage: "https://cdn.discordapp.com/attachments/777418829570637865/781211046730924063/Untitled_5.png",
+                        image: "https://cdn.discordapp.com/attachments/777041962565894175/804941952680198204/Untitled.png",
+                        tileImage: "https://cdn.discordapp.com/attachments/777041962565894175/804948668783263744/Untitled_4.png",
                         hidden: false,
                         videoMute: false,
                         tabTitleOverride: "Y-Dev",
                         _type: "CommonUI Simple Message MOTD",
                         title: "Y-Dev",
-                        body: "Welcome To Y-Dev A Fortnite Private Server Made By (@Jacobb626YT), (@Sparmage1),  (@kayisfunne), (@ForkKnifeGame__), and (@brodxyy) We All Hope You Enjoy!!!",
+                        body: "Welcome To Y-Dev A Fortnite Private Server Made by the (@YdevFN) team! We All Hope You Enjoy!!!",
                         videoLoop: false,
                         videoStreamingEnabled: false,
                         sortingPriority: 0,
@@ -63,6 +63,26 @@ app.get("/api/pages/fortnite-game", async (req, res) => {
                     }
                 ]
             }
+        },
+        emergencynoticev2: {
+            news: {
+                platform_messages: [],
+                _type: "Battle Royale News",
+                messages: [
+                    {
+                        hidden: false,
+                        _type: "CommonUI Simple Message Base",
+                        subgame: "br",
+                        title: "Y-Dev",
+                        body: "Made by the (@YdevFN) team! We All Hope You Enjoy :)",
+                        spotlight: true
+                    }
+                ]
+            },
+            _title: "emergencynoticev2",
+            _activeDate: new Date(),
+            lastModified: new Date(),
+            _locale: "en-US"
         },
         emergencynotice: {
             news: {
@@ -74,12 +94,12 @@ app.get("/api/pages/fortnite-game", async (req, res) => {
                         _type: "CommonUI Simple Message Base",
                         subgame: "br",
                         title: "Y-Dev",
-                        body: "Made By (@Jacobb626YT), (@Sparmage1),  (@kayisfunne), (@ForkKnifeGame__), and (@brodxyy) We All Hope You Enjoy :)    Server Version: 1.0",
+                        body: "Made by the (@YdevFN) team! We All Hope You Enjoy :)",
                         spotlight: true
                     }
                 ]
             },
-            _title: "emergencynotice",
+            _title: "emergencynoticev2",
             _activeDate: new Date(),
             lastModified: new Date(),
             _locale: "en-US"
